@@ -30,6 +30,8 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //era pro login_button.setOnClickListener pegar do fragment_login.xml mas nao to conseguindo importar
+        //tem q implementar o navigationHost tbm
         login_button.setOnClickListener {
             (activity as NavigationHost).navigateTo(HomeFragment(), false)
         }
