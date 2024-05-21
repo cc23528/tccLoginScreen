@@ -1,10 +1,11 @@
-val api: Unit = Unit
-
-
 plugins {
-    alias(libs.plugins.androidApplication)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.android.application")
+    id("kotlin-android")
+    id("com.android.library") version "8.3.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.0" apply false
 }
+
+val api: Unit = Unit
 
 android {
     namespace = "com.example.loginscreentcc"
@@ -29,17 +30,21 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
 }
 
+val credentialsVersion = "1.2.2"
+
 dependencies {
-    "com.google.android.material:material:1.2.0-alpha06"
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -48,6 +53,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-
+    implementation("androidx.credentials:credentials:$credentialsVersion")
+    implementation("androidx.credentials:credentials-play-services-auth:20.0.0")
+    // implementation("com.google.android.libraries.identity.googleid:googleid:$latest_version")
+    implementation("com.google.android.material:material:1.12.0")
 }

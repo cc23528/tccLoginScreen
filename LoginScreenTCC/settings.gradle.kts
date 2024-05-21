@@ -19,6 +19,14 @@ dependencyResolutionManagement {
     }
 }
 
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        // Outros repositórios, se houver
+    }
+}
+
 rootProject.name = "Login Screen TCC"
 include(":app")
  
