@@ -31,6 +31,10 @@ android {
         }
     }
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -42,7 +46,6 @@ android {
 
 }
 
-val credentialsVersion = "1.2.2"
 
 dependencies {
     implementation(libs.androidx.core.ktx)
@@ -53,8 +56,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("androidx.credentials:credentials:$credentialsVersion")
-    implementation("androidx.credentials:credentials-play-services-auth:20.0.0")
     // implementation("com.google.android.libraries.identity.googleid:googleid:$latest_version")
-    implementation("com.google.android.material:material:1.12.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.0.4")
+    implementation ("com.google.android.material:material:1.3.0")
 }
