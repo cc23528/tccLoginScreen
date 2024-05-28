@@ -1,16 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/darkBackgroundColor">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="333333" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile Fragment"
-        android:textSize="26sp"
-        android:layout_gravity="center"/>
+        android:text="Meu Perfil"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"/>
+    />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/default_profile_image"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Editar Foto de Perfil"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/darkTextColorPrimary"
+        android:backgroundTint="@color/darkAccent"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome de Usuário"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColorPrimary"/>
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu nome de usuário"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkTextColorPrimary"/>
+
+    <EditText
+        android:id="@+id/bio_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fale sobre Voce"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/save_changes_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Alterações"
+        android:textColor="@color/darkTextColorPrimary"
+        android:backgroundTint="@color/darkAccent"/>
+
+</LinearLayout>

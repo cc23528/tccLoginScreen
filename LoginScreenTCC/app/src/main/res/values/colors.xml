@@ -12,8 +12,27 @@
     <color name="colorAccents">#FED8D0</color>
     <color name="textColorPrimary">#442c2e</color>
     <color name="toolbarIconColor">@color/textColorPrimary</color>
-    <color name="loginPageBackgroundColor">FFFFFF</color>
-    <color name="productGridBackgroundColor">FFFBFA</color>
-    <color name="textInputOutlineColor">FBB8AC</color>
+    <color name="loginPageBackgroundColor">#FFFFFF</color>
+    <color name="productGridBackgroundColor">#FFFBFA</color>
+    <color name="textInputOutlineColor">#FBB8AC</color>
+
+
+    <color name="darkPrimary">#424242</color>
+    <color name="darkPrimaryDark">#333333</color>
+    <color name="darkAccent">#FF5722</color>
+    <color name="darkTextColorPrimary">#FFFFFF</color>
+    <color name="darkBackgroundColor">#757575</color>
+    <color name="darkCardBackground">#333333</color>
+    <color name="darkCardTextColor">#FFFFFF</color>
+
+    <!--
+    <color name="grayPrimary">#424242</color>
+    <color name="grayPrimaryDark">#303030</color>
+    <color name="grayAccent">#FF9800</color>
+    <color name="grayTextColorPrimary">#FFFFFF</color>
+    <color name="grayBackgroundColor">#757575</color>
+    <color name="grayCardBackground">#616161</color>
+    <color name="grayCardTextColor">#FFFFFF</color>
+    -->
 
 </resources>

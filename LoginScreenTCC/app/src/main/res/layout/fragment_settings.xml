@@ -1,64 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/darkBackgroundColor">
 
-    <!-- Título da tela -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Configurações"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/darkTextColorPrimary"/>
 
-    <!-- Seção de Conta -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Conta"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/darkTextColorPrimary"/>
 
-    <!-- Botão para editar perfil -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Editar Perfil"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/darkTextColorPrimary"
+        android:backgroundTint="@color/darkAccent"/>
 
-    <!-- Botão para gerenciar privacidade -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gerenciar Privacidade"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/darkTextColorPrimary"
+        android:backgroundTint="@color/darkAccent"/>
 
-    <!-- Seção de Preferências -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Preferências"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/darkTextColorPrimary"/>
 
-    <!-- Switch para notificações -->
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Receber Notificações"
         android:checked="true"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/darkTextColorPrimary"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-    <!-- Switch para downloads automáticos -->
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Downloads Automáticos"
-        android:checked="true"/>
+        android:checked="true"
+        android:textColor="@color/darkTextColorPrimary"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </LinearLayout>
