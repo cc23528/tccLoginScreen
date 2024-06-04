@@ -9,6 +9,10 @@
 
     <color name="colorPrimary">#E0E0E0</color>
     <color name="colorPrimaryDark">#FED8D0</color>
+<<<<<<< HEAD
+=======
+    <color name="colorAccent">#FED8D0</color>
+>>>>>>> e4aff2c941ee131c98055fe57916f60370a3db22
     <color name="colorAccents">#FED8D0</color>
     <color name="textColorPrimary">#442c2e</color>
     <color name="toolbarIconColor">@color/textColorPrimary</color>
