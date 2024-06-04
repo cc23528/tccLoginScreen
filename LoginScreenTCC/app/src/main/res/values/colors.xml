@@ -8,7 +8,7 @@
     -->
 
     <color name="colorPrimary">#E0E0E0</color>
-    <color name="colorPrimaryDark">#FBB88AC</color>
+    <color name="colorPrimaryDark">#FED8D0</color>
     <color name="colorAccents">#FED8D0</color>
     <color name="textColorPrimary">#442c2e</color>
     <color name="toolbarIconColor">@color/textColorPrimary</color>
@@ -19,7 +19,7 @@
 
     <color name="darkPrimary">#424242</color>
     <color name="darkPrimaryDark">#333333</color>
-    <color name="darkAccent">#FF5722</color>
+    <color name="darkAccent">#FFFFFF</color>
     <color name="darkTextColorPrimary">#FFFFFF</color>
     <color name="darkBackgroundColor">#757575</color>
     <color name="darkCardBackground">#333333</color>

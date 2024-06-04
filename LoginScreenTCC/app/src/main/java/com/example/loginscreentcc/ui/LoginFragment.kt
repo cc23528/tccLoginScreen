@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.lifecycle.findViewTreeViewModelStoreOwner
-import com.example.loginscreentcc.NavigationHost
+//import com.example.loginscreentcc.NavigationHost
 
 
 import com.example.loginscreentcc.R
@@ -36,7 +36,7 @@ class LoginFragment : Fragment() {
 
         val btnLogin = view.findViewById<Button>(R.id.login_button)
         btnLogin.setOnClickListener {
-            (activity as NavigationHost).navigateTo(HomeFragment(), false)
+            //(activity as NavigationHost).navigateTo(HomeFragment(), false)
         }
     }
 

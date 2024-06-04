@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.loginscreentcc.ui.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/settings2"
+        android:name="com.example.loginscreentcc.settings"
+        android:label="settings" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.loginscreentcc.ui.HomeFragment"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_homeFragment_to_settings2"
+            app:destination="@id/settings2" />
+        <action
+            android:id="@+id/action_homeFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.loginscreentcc.ui.TestFragment"
+        android:label="TestFragment" />
+</navigation>
