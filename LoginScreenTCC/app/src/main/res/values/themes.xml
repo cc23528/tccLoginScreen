@@ -40,16 +40,14 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
-<<<<<<< HEAD
+
 
     <style name="Widget.Shrine.Toolbar" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorAccent</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="titleTextAppearance">@style/TextAppearance.Shrine.Toolbar</item>
     </style>
-=======
-    
->>>>>>> e4aff2c941ee131c98055fe57916f60370a3db22
+
 
     <style name="TextAppearance.Shrine.Toolbar" parent="TextAppearance.MaterialComponents.Button">
         <item name="android:textSize">16sp</item>

@@ -25,15 +25,12 @@
     <ImageView
         android:id="@+id/profile_image"
         android:layout_width="100dp"
-<<<<<<< HEAD
         android:layout_height="100dp"
-=======
-        android:layout_height="100dp"/>
-      <!--  android:src="@drawable/default_profile_image"
->>>>>>> e4aff2c941ee131c98055fe57916f60370a3db22
         android:scaleType="centerCrop"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp" -->
+        android:layout_marginBottom="16dp"/>
+      <!--  android:src="@drawable/default_profile_image"
+         -->
 
     <Button
         android:id="@+id/edit_profile_button"
